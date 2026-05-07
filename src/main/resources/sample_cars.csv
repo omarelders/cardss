@@ -1,0 +1,51 @@
+name,year,selling_price,km_driven,fuel,seller_type,transmission,owner,mileage,engine,max_power,torque,seats
+Maruti Swift Dzire VDI,2014,203000,145500,Diesel,Individual,Manual,First Owner,23.4 kmpl,1248 CC,74 bhp,190Nm@ 2000rpm,5
+Skoda Rapid 1.5 TDI Ambition,2014,167000,120000,Diesel,Individual,Manual,Second Owner,21.14 kmpl,1498 CC,103.52 bhp,250Nm@ 1500-2500rpm,5
+Honda City 2012-2017 i VTEC V,2006,71000,140000,Petrol,Individual,Manual,Third Owner,17.4 kmpl,1497 CC,118 bhp,145Nm@ 4600rpm,5
+Hyundai i20 Sportz Diesel,2010,101000,127000,Diesel,Individual,Manual,First Owner,22.54 kmpl,1396 CC,89.78 bhp,220Nm@ 1750-2750rpm,5
+Datsun RediGO T Option,2017,76000,45000,Petrol,Individual,Manual,First Owner,25.17 kmpl,799 CC,54 bhp,72Nm@ 4200rpm,5
+Honda Amaze S i-Dtech,2018,245000,67000,Diesel,Individual,Manual,First Owner,25.8 kmpl,1498 CC,98.6 bhp,200Nm@ 1750rpm,5
+Maruti Alto 800 LXI CNG,2019,140000,30000,CNG,Individual,Manual,First Owner,33.44 km/kg,796 CC,40.3 bhp,60Nm@ 3000rpm,5
+Toyota Innova Crysta 2.4 V MT 7 STR,2020,1080000,25000,Diesel,Dealer,Manual,First Owner,15.1 kmpl,2393 CC,148 bhp,343Nm@ 1400-2800rpm,7
+Mahindra XUV500 W10,2016,392000,65000,Diesel,Individual,Manual,First Owner,16.0 kmpl,2179 CC,138 bhp,330Nm@ 1600-2800rpm,7
+Hyundai Creta 1.6 SX Plus Petrol,2018,473000,30000,Petrol,Dealer,Automatic,First Owner,16.8 kmpl,1591 CC,123 bhp,151Nm@ 4850rpm,5
+BMW 3 Series 320d Luxury Line,2019,1575000,35000,Diesel,Dealer,Automatic,First Owner,22.06 kmpl,1995 CC,190 bhp,400Nm@ 1750-2500rpm,5
+Tata Nexon XZ Plus Teal,2021,608000,18000,Petrol,Dealer,Manual,First Owner,17.01 kmpl,1199 CC,120 bhp,170Nm@ 2000-3500rpm,5
+Maruti Suzuki Vitara Brezza ZDi Plus,2019,428000,55000,Diesel,Individual,Manual,First Owner,24.3 kmpl,1248 CC,90 bhp,200Nm@ 1750rpm,5
+Honda Jazz VX CVT,2020,383000,22000,Petrol,Dealer,Automatic,First Owner,18.7 kmpl,1199 CC,90 bhp,110Nm@ 4800rpm,5
+Hyundai Verna 1.6 SX VTVT AT,2019,540000,40000,Petrol,Dealer,Automatic,First Owner,17.7 kmpl,1591 CC,123 bhp,151Nm@ 4850rpm,5
+Kia Seltos HTX G 1.5,2020,653000,28000,Petrol,Dealer,Manual,First Owner,16.5 kmpl,1497 CC,115 bhp,144Nm@ 4500rpm,5
+Maruti Wagon R VXI 1.2,2020,248000,20000,Petrol,Individual,Manual,First Owner,21.5 kmpl,1197 CC,82.85 bhp,113Nm@ 4200rpm,5
+Tata Tiago XZ Petrol,2019,221000,35000,Petrol,Individual,Manual,First Owner,23.84 kmpl,1199 CC,86 bhp,113Nm@ 3300rpm,5
+Renault Kwid CLIMBER 1.0 AMT,2019,203000,28000,Petrol,Individual,Automatic,First Owner,25.17 kmpl,999 CC,68 bhp,91Nm@ 3500rpm,5
+Ford EcoSport Titanium Plus 1.5 TDCi,2018,414000,48000,Diesel,Individual,Manual,First Owner,22.77 kmpl,1498 CC,100 bhp,215Nm@ 1750-3000rpm,5
+Mahindra Scorpio S11 4WD,2019,698000,42000,Diesel,Individual,Manual,First Owner,15.4 kmpl,2179 CC,140 bhp,320Nm@ 1800-2800rpm,9
+Jeep Compass Limited Plus 4x4,2020,1283000,22000,Diesel,Dealer,Automatic,First Owner,17.1 kmpl,1956 CC,173 bhp,350Nm@ 1750-2500rpm,5
+Hyundai Tucson GLS 4WD AT 2.0 Diesel,2018,990000,30000,Diesel,Dealer,Automatic,First Owner,16.72 kmpl,1995 CC,185 bhp,400Nm@ 1750-2750rpm,5
+MG Hector Plus Sharp 1.5 Turbo DCT,2021,900000,12000,Petrol,Dealer,Automatic,First Owner,14.16 kmpl,1451 CC,143 bhp,250Nm@ 1600-3000rpm,7
+Volkswagen Polo 1.0 MPI Comfortline,2020,347000,18000,Petrol,Dealer,Manual,First Owner,18.23 kmpl,999 CC,75 bhp,95Nm@ 3500rpm,5
+Maruti Baleno Alpha CVT,2020,405000,25000,Petrol,Dealer,Automatic,First Owner,21.01 kmpl,1197 CC,88.5 bhp,113Nm@ 4200rpm,5
+Honda WR-V i-DTEC S,2019,369000,48000,Diesel,Individual,Manual,First Owner,25.5 kmpl,1498 CC,100 bhp,200Nm@ 1750rpm,5
+Nissan Kicks XV Premium Dual Tone,2020,608000,22000,Petrol,Dealer,Manual,First Owner,14.23 kmpl,1618 CC,106 bhp,152Nm@ 4000rpm,5
+Tata Harrier XZ Plus,2021,833000,15000,Diesel,Dealer,Manual,First Owner,16.35 kmpl,1956 CC,170 bhp,350Nm@ 1750-2500rpm,5
+Mahindra Bolero B6,2020,428000,35000,Diesel,Individual,Manual,First Owner,16.98 kmpl,2523 CC,72 bhp,195Nm@ 1400-2200rpm,7
+Maruti Alto K10 VXI AMT,2020,189000,15000,Petrol,Dealer,Automatic,First Owner,24.07 kmpl,998 CC,67 bhp,90Nm@ 3500rpm,5
+Hyundai Santro Sportz,2019,236000,28000,Petrol,Dealer,Manual,First Owner,20.3 kmpl,1086 CC,69 bhp,99Nm@ 4000rpm,5
+Datsun GO T,2019,169000,30000,Petrol,Individual,Manual,First Owner,19.04 kmpl,1198 CC,68 bhp,104Nm@ 3600rpm,7
+Toyota Fortuner 2.8 4x2 AT,2020,1710000,20000,Diesel,Dealer,Automatic,First Owner,14.24 kmpl,2755 CC,204 bhp,500Nm@ 1600-2800rpm,7
+Audi A4 35 TDI Premium Plus,2020,1890000,18000,Diesel,Dealer,Automatic,First Owner,18.1 kmpl,1968 CC,163 bhp,400Nm@ 1750-3250rpm,5
+Maruti Suzuki Ertiga VXI,2019,369000,42000,Petrol,Individual,Manual,First Owner,19.34 kmpl,1462 CC,104.7 bhp,138Nm@ 4400rpm,7
+Honda BR-V V CVT Petrol,2018,495000,38000,Petrol,Dealer,Automatic,First Owner,15.4 kmpl,1497 CC,118 bhp,145Nm@ 4600rpm,7
+Skoda Octavia Ambition 1.8 TSI AT,2017,720000,45000,Petrol,Dealer,Automatic,Second Owner,14.77 kmpl,1798 CC,178.83 bhp,250Nm@ 1500-3500rpm,5
+Maruti Suzuki Swift ZXI Plus AT,2021,392000,10000,Petrol,Dealer,Automatic,First Owner,23.76 kmpl,1197 CC,88.5 bhp,113Nm@ 4200rpm,5
+Kia Sonet HTX Plus 1.0 iMT,2020,540000,15000,Petrol,Dealer,Manual,First Owner,18.3 kmpl,998 CC,120 bhp,172Nm@ 1500-4000rpm,5
+Tata Altroz XZ Diesel,2020,405000,20000,Diesel,Dealer,Manual,First Owner,25.11 kmpl,1497 CC,90 bhp,200Nm@ 1750rpm,5
+Hyundai Grand i10 Nios Sportz AMT 1.2 Kappa VTVT,2019,315000,22000,Petrol,Dealer,Automatic,First Owner,20.7 kmpl,1197 CC,82.85 bhp,113.75Nm@ 4000rpm,5
+Renault Duster RXZ Diesel 4X2 MT,2019,473000,55000,Diesel,Individual,Manual,Second Owner,23.18 kmpl,1461 CC,108.46 bhp,245Nm@ 1750rpm,5
+Ford Aspire Titanium Plus 1.5 TDCi,2017,306000,68000,Diesel,Individual,Manual,First Owner,24.40 kmpl,1498 CC,100 bhp,215Nm@ 1750-3000rpm,5
+Maruti Suzuki Ciaz Alpha AT,2019,450000,32000,Petrol,Dealer,Automatic,First Owner,21.56 kmpl,1462 CC,104.7 bhp,138Nm@ 4400rpm,5
+Honda Civic ZX CVT Petrol,2020,833000,18000,Petrol,Dealer,Automatic,First Owner,16.5 kmpl,1498 CC,141 bhp,145Nm@ 4600rpm,5
+Mahindra Thar LX Hard Top Petrol AT,2021,743000,8000,Petrol,Dealer,Automatic,First Owner,15.2 kmpl,1999 CC,150 bhp,320Nm@ 2000rpm,4
+Toyota Glanza V CVT,2019,369000,25000,Petrol,Dealer,Automatic,First Owner,21.01 kmpl,1197 CC,88.5 bhp,113Nm@ 4200rpm,5
+Volkswagen Vento 1.6 Highline Plus AT,2018,473000,40000,Petrol,Dealer,Automatic,First Owner,16.38 kmpl,1598 CC,104 bhp,153Nm@ 3800rpm,5
+Hyundai Kona Electric Premium,2020,1215000,12000,Electric,Dealer,Automatic,First Owner,452 km/charge,0 CC,136 bhp,395Nm@ 0rpm,5

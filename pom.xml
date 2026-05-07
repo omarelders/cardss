@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Project Coordinates
+    ══════════════════════════════════════════════════════════ -->
+    <groupId>com.cardss</groupId>
+    <artifactId>car-dss</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>Car Recommendation DSS</name>
+    <description>
+        Professional Java Swing Decision Support System for car recommendations.
+        Uses CarDekho dataset with OpenCSV, Apache POI, and JFreeChart.
+    </description>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Global Properties
+    ══════════════════════════════════════════════════════════ -->
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Dependency versions (single-source of truth) -->
+        <opencsv.version>5.9</opencsv.version>
+        <poi.version>5.3.0</poi.version>
+        <jfreechart.version>1.5.4</jfreechart.version>
+        <junit.version>4.13.2</junit.version>
+
+        <!-- Plugin versions -->
+        <plugin.compiler.version>3.13.0</plugin.compiler.version>
+        <plugin.assembly.version>3.7.1</plugin.assembly.version>
+        <plugin.exec.version>3.4.1</plugin.exec.version>
+        <plugin.surefire.version>3.2.5</plugin.surefire.version>
+
+        <!-- Main class for exec + assembly -->
+        <main.class>com.cardss.Main</main.class>
+    </properties>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Dependencies
+    ══════════════════════════════════════════════════════════ -->
+    <dependencies>
+
+        <!-- ── CSV Parsing ──────────────────────────────────────── -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>${opencsv.version}</version>
+        </dependency>
+
+        <!-- ── Excel (.xls / .xlsx) ─────────────────────────────── -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+
+        <!-- ── JFreeChart Visualizations ───────────────────────── -->
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>${jfreechart.version}</version>
+        </dependency>
+
+        <!-- ── Testing ──────────────────────────────────────────── -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <!-- ══════════════════════════════════════════════════════════
+         Build Plugins
+    ══════════════════════════════════════════════════════════ -->
+    <build>
+        <plugins>
+
+            <!-- ── Java Compiler ────────────────────────────────── -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${plugin.compiler.version}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <compilerArgs>
+                        <arg>-Xlint:unchecked</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+
+            <!-- ── Fat-JAR Assembly ─────────────────────────────── -->
+            <!--
+                Produces: target/car-dss-1.0-SNAPSHOT-jar-with-dependencies.jar
+                Run:  java -jar target/car-dss-1.0-SNAPSHOT-jar-with-dependencies.jar
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>${plugin.assembly.version}</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>${main.class}</mainClass>
+                        </manifest>
+                        <manifestEntries>
+                            <Built-By>CarDSS Build</Built-By>
+                            <Implementation-Title>${project.name}</Implementation-Title>
+                            <Implementation-Version>${project.version}</Implementation-Version>
+                        </manifestEntries>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <finalName>${project.artifactId}-${project.version}</finalName>
+                    <appendAssemblyId>true</appendAssemblyId>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- ── Exec Plugin (run without fat-JAR) ────────────── -->
+            <!--
+                Usage:  mvn exec:java
+                Runs the application directly from the classpath.
+            -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>${plugin.exec.version}</version>
+                <configuration>
+                    <mainClass>${main.class}</mainClass>
+                    <cleanupDaemonThreads>false</cleanupDaemonThreads>
+                </configuration>
+            </plugin>
+
+            <!-- ── Surefire (Test Runner) ────────────────────────── -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${plugin.surefire.version}</version>
+                <configuration>
+                    <useFile>false</useFile>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
